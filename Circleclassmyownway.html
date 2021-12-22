@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function Circle(radius, color){
+    this.radius=radius;
+    this.color=color;
+        this.getArea=function(){
+            return "Diện tích "+this.radius*this.radius*Math.PI     /*lấy diện tích hình tròn*/
+        }
+    this.getRadiusColor=function (){
+    return "Bán kính "+this.radius+" Màu "+this.color;   /*lấy thông tin của hình tròn*/
+        }
+    }
+    let circle = new Circle("10", "black");
+    console.log(circle.getRadiusColor())
+    console.log(circle.getArea())
+
+</script>
